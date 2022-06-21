@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo 'Tutorial de redirecionadores'
+
+echo Se para a esquerda, direcionam a entrada padrão "< << <<<."
+echo Se para a direita, redirecionam a saída padrão  "> / $ 2> /  $ &>."
+echo
+echo Exemplo de redirecionador de saída padrão ">"
+echo Exemplo de redirecionador de saída quando há erros "$ 2>"
+echo Exemplo de saída padrão e erro "$ ls teclado_gamer > aa 2> erro"
+echo
+echo "$ &>" Redirecionador de saída de erro e padrão ao mesmo tempo.
+echo "$ ls 123 &> ambos.txt"
+echo
+echo Exemplo de redirecionador simuntâneo "$ &>"
+echo Exemplo de saída simuntânea "$ ls teclado_gamer &> aa" 
+echo
+echo O '<<<' pode ser usado para contar o tanto de caracteres numa frase.
+echo Exemplo "$ wc -c <<< Comprei 2 mangas"
+echo          "$ 14"
+echo
+echo Também pode ser usado para contar linhas
+echo Exemplo "$ wc -c <<< Comprei 2 mangas"
+echo         "$1"
