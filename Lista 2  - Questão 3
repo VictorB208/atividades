@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Digite um arquivo: " aa
+ 
+if [ $( ls $aa ) ] && (( $(wc -l < $aa) > 3 ))
+
+then
+        echo "GOOD"
+
+        else
+
+        echo "BAD"
+fi
