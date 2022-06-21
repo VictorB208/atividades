@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo 'Digite quatro arquivos:'
+
+read aa ee ii oo
+
+for i in $aa $ee $ii $oo;
+do
+        if ( a=$(wc -l < ${i}) )
+
+        then
+                c=$(cat ${i} | wc -l)
+                echo ${c}
+        fi
+done
+
+echo contratado pro vasco kkkk
