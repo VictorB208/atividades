@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for i in $1
+do
+        ls ${i} &> /dev/null && echo SIM || echo NAO; done
