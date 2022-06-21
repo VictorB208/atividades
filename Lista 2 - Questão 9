@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for i in $(seq 1 101)
+do
+        x=$(( $RANDOM % 200 ))
+        echo ${x} >> num.txt
+done
+
+y=$(wc -l < num.txt)
+echo linhas: ${y}
+
+k=0
+for j in $(cat num.txt)
+do
+        k=$((k + j))
+done
+
+echo soma das linhas: ${j}
