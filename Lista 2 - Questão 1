@@ -1,0 +1,5 @@
+!/bin/bash
+
+echo 'O arquivo "teclado_gamer" existe no diretório atual?'
+
+ls teclado_gamer &> /dev/null && echo 'SIM' || echo 'NAO'
